@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Checker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('https://source.unsplash.com/random/1920x1080?technology');">
+    <div class="min-h-screen bg-black bg-opacity-50 flex flex-col items-center justify-center p-4">
+        <div class="container max-w-2xl mx-auto">
+            <div class="bg-white bg-opacity-95 rounded-xl shadow-2xl p-8">
+                <h1 class="text-4xl font-bold text-center mb-8 text-gray-800">Status Checker</h1>
+                
+                <div class="grid grid-cols-3 gap-8 mb-8">
+                    <div id="cubeA" class="cube bg-gradient-to-br from-blue-500 to-blue-600" onclick="selectOption('A')">
+                        <span class="text-3xl font-bold">A</span>
+                    </div>
+                    <div id="cubeB" class="cube bg-gradient-to-br from-green-500 to-green-600" onclick="selectOption('B')">
+                        <span class="text-3xl font-bold">B</span>
+                    </div>
+                    <div id="cubeC" class="cube bg-gradient-to-br from-red-500 to-red-600" onclick="selectOption('C')">
+                        <span class="text-3xl font-bold">C</span>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <div id="result" class="text-2xl font-semibold text-gray-800 mb-2"></div>
+                    <div id="lastUpdated" class="text-sm text-gray-600"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
